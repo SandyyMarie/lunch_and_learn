@@ -1,15 +1,13 @@
-# require 'rails_helper'
+require 'rails_helper'
 
-# RSpec.describe 'Recipes Service' do
-#   it 'returns Recipes API', :vcr do
-#     recipes = RecipesService.get_recipes
-#     expect(recipes).to be_an(Array)
-#     require 'pry'; binding.pry
-#     recipes.each do |recipes|
-#       expect(recipes).to have_key(:id)
-#       expect(recipes[:id]). to be_a String
-#       expect(recipes[:attributes]).to have_key(:name)
-#       expect(recipes[:attributes][:name]).to be_a String
-#     end
-#   end
-# end
+RSpec.describe 'Recipes Service' do
+  it 'returns Recipes API', :vcr do
+    recipes = RecipeService.recipe_search("thailand")
+    expect(recipes).to be_an(Hash)
+    recipes[:hits].each do |recipe|
+      expect(recipe[:recipe][:label]).to be_a(String)
+      expect(recipe[:recipe][:url]).to be_a(String) 
+      expect(recipe[:recipe][:image]).to be_a(String) 
+    end
+  end
+end
