@@ -1,6 +1,7 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'simplecov'
-require 'webmock/rspec'
+SimpleCov.start
+# require 'webmock/rspec'
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
@@ -35,7 +36,6 @@ end
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
-  config.include FactoryBot::Syntax::Methods
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
   # instead of true.
@@ -64,3 +64,18 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
 end
+
+# Shoulda::Matchers.configure do |config|
+#   config.integrate do |with|
+#     with.test_framework :rspec
+#     with.library :rails
+#   end
+# end
+
+# VCR.configure do |config|
+#   config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
+#   config.hook_into :webmock
+#   config.filter_sensitive_data('<app_key>') { ENV['app_key'] }
+#   config.allow_http_connections_when_no_cassette = true
+#   config.configure_rspec_metadata!
+# end
