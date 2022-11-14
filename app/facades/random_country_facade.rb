@@ -13,4 +13,10 @@ class RandomCountryFacade
   def self.random_country_lat_long
     country_randomizer[:latlng]
   end
+
+  def self.specific_country_latlong(country)
+    country_options = RandomCountryService.country_list
+    require 'pry'; binding.pry
+    country_options.find(country)
+  end
 end
