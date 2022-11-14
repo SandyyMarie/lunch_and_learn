@@ -1,10 +1,10 @@
 FactoryBot.define do
   FactoryBot.define do
     factory :favorites do
-      type { Faker::Food.ethnic_category }
-      title { Faker::Food.dish }
-      url { Faker::Internet.url }
+      api_key { Faker::Internet.password }
       country { Faker::Address.country }
-      img { Faker::Internet.url }
+      recipe_link { Faker::Internet.url }
+      recipe_title { Faker::Food.dish }
     end
   end
+end

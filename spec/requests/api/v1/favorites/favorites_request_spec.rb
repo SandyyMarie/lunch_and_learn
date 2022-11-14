@@ -7,5 +7,7 @@ describe "Favorites API" do
     post '/api/v1/favorites'
 
     expect(response).to be_successful
+
+    favorites = JSON.parse(response.body)
   end
 end
