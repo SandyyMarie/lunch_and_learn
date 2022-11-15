@@ -2,10 +2,6 @@ class AirQualityService
 
   def self.aq_for_country(lat,long)
     response = conn.get("/data/2.5/air_pollution?lat=#{lat}&lon=#{long}") 
-    #do |f|
-    #   f.params['lat'] = lat,
-    #   f.params['lon'] = long
-    # end
     parse(response)
   end
 
