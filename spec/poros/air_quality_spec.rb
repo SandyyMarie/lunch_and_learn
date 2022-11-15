@@ -29,7 +29,7 @@ RSpec.describe AirQuality do
 
     new_aq = AirQuality.new(data)
 
-    expect(new_aq.id).to eq(null)
+    expect(new_aq.id).to eq(nil)
     expect(new_aq.type).to eq('air_quality')
     expect(new_aq.aqi).to eq(4)
     expect(new_aq.datetime).to eq(1668532338)
