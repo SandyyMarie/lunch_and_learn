@@ -18,6 +18,6 @@ RSpec.describe 'Random Country Facade', :vcr do
 
     it '#specific_country_latlong' do
       lat_lng = RandomCountryFacade.specific_country_latlong("New Zealand")
-      expect(lat_lng).to be_a(Array) #might need to update
+      expect(lat_lng).to be_a(Array)
     end
 end
