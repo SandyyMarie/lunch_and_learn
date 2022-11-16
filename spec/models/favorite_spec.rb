@@ -1,6 +1,6 @@
 require 'rails_helper'
 
- RSpec.describe Favorites, type: :model do
+ RSpec.describe Favorite, type: :model do
   describe 'validations' do
     it { should validate_presence_of(:country) }
     it { should validate_presence_of(:recipe_link) }
