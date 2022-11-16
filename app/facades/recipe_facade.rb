@@ -4,6 +4,6 @@ class RecipeFacade
 
     recipes[:hits].map do |recipe|
       Recipe.new(recipe, country)
-    end
+    end.first(10)
   end
 end

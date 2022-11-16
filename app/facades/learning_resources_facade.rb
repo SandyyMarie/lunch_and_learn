@@ -1,7 +1,6 @@
 class LearningResourcesFacade
    def self.country_video(search_country)
       video_results = LearningResourcesService.youtube(search_country)
-
       pulled_data = {
         title: video_results[:items][0][:snippet][:title],
         youtube_video_id: video_results[:items][0][:id][:videoId]
