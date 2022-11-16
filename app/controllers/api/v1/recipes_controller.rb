@@ -4,7 +4,7 @@ class Api::V1::RecipesController < ApplicationController
       search_country = RandomCountryFacade.random_country_name
       data = RecipeFacade.get_recipes_for_country(search_country)
       render json: RecipeSerializer.new(data)
-    elsif params[:country] == "" ##if param is empty string, return empty data set
+    elsif params[:country] == "\"\"" ##if param is empty string, return empty data set, not filtering
       render json: {data: []}
     elsif RandomCountryFacade.country_exists?(params[:country].titleize) ##if country param sent AND valid
       search_country = params[:country]
