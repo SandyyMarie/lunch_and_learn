@@ -20,6 +20,11 @@ class LearningResourcesFacade
    def self.new_resource(search_country)
     video = country_video(search_country)
     images = country_images(search_country)
+    if video == nil
+      video = []
+    elsif images == nil
+      images = []
+    end
     LearningResources.new(search_country, video, images)
    end
 
