@@ -12,4 +12,11 @@ RSpec.describe 'Learning Resources Facade', :vcr do
       country_pic_info = LearningResourcesFacade.country_images(country)
       expect(country_pic_info).to be_a(Array)
     end
+
+    it '#new_resource' do
+      country = "Canada"
+      new_object = LearningResourcesFacade.new_resource(country)
+      expect(new_object).to be_a(LearningResources)#might need to rewrite expectation
+    end
+
 end
