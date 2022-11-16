@@ -20,4 +20,17 @@ class RandomCountryFacade
       country_coords[:latlng]
 
    end
+
+   def self.country_exists?(search_country)
+      country_options = RandomCountryService.country_list
+      country_found = country_options.find do |country|
+        country[:name][:common] == search_country
+      end
+
+      if country_found == nil
+         return false
+      elsif country_found != nil
+         return true
+      end
+   end
 end
