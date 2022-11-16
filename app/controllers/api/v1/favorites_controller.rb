@@ -11,4 +11,10 @@ class Api::V1::FavoritesController < ApplicationController
       end
     end
   end
+
+  def index
+    user = User.find_by(api_key: params[:api_key])
+    # data = LearningResourcesFacade.new_resource(search_country)
+    render json: FavoritesSerializer.new(user.favorites)
+  end
  end

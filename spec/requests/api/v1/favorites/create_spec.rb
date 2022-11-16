@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe "New Favorites Requests" do
+describe "New Favorites Create Requests" do
   it "adds a new favorite to the user" do
 
     post '/api/v1/users', params: {
