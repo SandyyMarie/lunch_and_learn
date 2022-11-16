@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.googleapis.com/youtube/v3/search?channelId=UC4a-Gbdw7vOaccHmFo40b9g&key=AIzaSyA7jp67HLZ_em-jpvklTKP57DFl1y_xBeQ&maxResults=1&part=snippet&q=laos
+    uri: https://www.googleapis.com/youtube/v3/search?channelId=UC4a-Gbdw7vOaccHmFo40b9g&key=<key>&maxResults=1&part=snippet&q=laos
     body:
       encoding: US-ASCII
       string: ''
@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Wed, 16 Nov 2022 10:56:32 GMT
+      - Wed, 16 Nov 2022 11:56:56 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -45,5 +45,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         ewogICJraW5kIjogInlvdXR1YmUjc2VhcmNoTGlzdFJlc3BvbnNlIiwKICAiZXRhZyI6ICJaQXp3SW5HeHRJU0FIc29NZTU5ZnQ3ODE3eWciLAogICJuZXh0UGFnZVRva2VuIjogIkNBRVFBQSIsCiAgInJlZ2lvbkNvZGUiOiAiVVMiLAogICJwYWdlSW5mbyI6IHsKICAgICJ0b3RhbFJlc3VsdHMiOiAxNiwKICAgICJyZXN1bHRzUGVyUGFnZSI6IDEKICB9LAogICJpdGVtcyI6IFsKICAgIHsKICAgICAgImtpbmQiOiAieW91dHViZSNzZWFyY2hSZXN1bHQiLAogICAgICAiZXRhZyI6ICJ3LTJLQXlHUEpVbVV6NkhxZDdyNkh3RVl1Q3ciLAogICAgICAiaWQiOiB7CiAgICAgICAgImtpbmQiOiAieW91dHViZSN2aWRlbyIsCiAgICAgICAgInZpZGVvSWQiOiAiOWU5R1dkVDJwRVEiCiAgICAgIH0sCiAgICAgICJzbmlwcGV0IjogewogICAgICAgICJwdWJsaXNoZWRBdCI6ICIyMDExLTA0LTI3VDE4OjMyOjI2WiIsCiAgICAgICAgImNoYW5uZWxJZCI6ICJVQzRhLUdiZHc3dk9hY2NIbUZvNDBiOWciLAogICAgICAgICJ0aXRsZSI6ICJWaWV0bmFtIFdhciB8IFRoZSAyMHRoIGNlbnR1cnkgfCBXb3JsZCBoaXN0b3J5IHwgS2hhbiBBY2FkZW15IiwKICAgICAgICAiZGVzY3JpcHRpb24iOiAiQ291cnNlcyBvbiBLaGFuIEFjYWRlbXkgYXJlIGFsd2F5cyAxMDAlIGZyZWUuIFN0YXJ0IHByYWN0aWNpbmfigJRhbmQgc2F2aW5nIHlvdXIgcHJvZ3Jlc3PigJRub3c6IC4uLiIsCiAgICAgICAgInRodW1ibmFpbHMiOiB7CiAgICAgICAgICAiZGVmYXVsdCI6IHsKICAgICAgICAgICAgInVybCI6ICJodHRwczovL2kueXRpbWcuY29tL3ZpLzllOUdXZFQycEVRL2RlZmF1bHQuanBnIiwKICAgICAgICAgICAgIndpZHRoIjogMTIwLAogICAgICAgICAgICAiaGVpZ2h0IjogOTAKICAgICAgICAgIH0sCiAgICAgICAgICAibWVkaXVtIjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvOWU5R1dkVDJwRVEvbXFkZWZhdWx0LmpwZyIsCiAgICAgICAgICAgICJ3aWR0aCI6IDMyMCwKICAgICAgICAgICAgImhlaWdodCI6IDE4MAogICAgICAgICAgfSwKICAgICAgICAgICJoaWdoIjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvOWU5R1dkVDJwRVEvaHFkZWZhdWx0LmpwZyIsCiAgICAgICAgICAgICJ3aWR0aCI6IDQ4MCwKICAgICAgICAgICAgImhlaWdodCI6IDM2MAogICAgICAgICAgfQogICAgICAgIH0sCiAgICAgICAgImNoYW5uZWxUaXRsZSI6ICJLaGFuIEFjYWRlbXkiLAogICAgICAgICJsaXZlQnJvYWRjYXN0Q29udGVudCI6ICJub25lIiwKICAgICAgICAicHVibGlzaFRpbWUiOiAiMjAxMS0wNC0yN1QxODozMjoyNloiCiAgICAgIH0KICAgIH0KICBdCn0K
-  recorded_at: Wed, 16 Nov 2022 10:56:32 GMT
+  recorded_at: Wed, 16 Nov 2022 11:56:56 GMT
 recorded_with: VCR 6.1.0
