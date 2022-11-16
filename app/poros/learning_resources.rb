@@ -6,7 +6,6 @@ class LearningResources
     @type = "learning_resource"
     @country = search_country
     @video = video_data
-    @images = image_data
-    
+    @images = image_data 
   end
 end
