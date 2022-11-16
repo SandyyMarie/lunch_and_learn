@@ -14,7 +14,10 @@ class Api::V1::FavoritesController < ApplicationController
 
   def index
     user = User.find_by(api_key: params[:api_key])
-    # data = LearningResourcesFacade.new_resource(search_country)
-    render json: FavoritesSerializer.new(user.favorites)
+    if user == nil
+      render json: { error: "That user does not exist" }, status: 404
+    else
+      render json: FavoriteSerializer.new(user.favorites)
+    end
   end
  end
