@@ -24,14 +24,4 @@ ActiveRecord::Schema.define(version: 2022_11_12_090946) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "recipes", force: :cascade do |t|
-    t.string "type"
-    t.string "title"
-    t.string "url"
-    t.string "country"
-    t.string "img"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
 end
