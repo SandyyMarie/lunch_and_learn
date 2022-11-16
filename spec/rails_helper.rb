@@ -65,17 +65,21 @@ RSpec.configure do |config|
   # config.filter_gems_from_backtrace("gem name")
 end
 
-# Shoulda::Matchers.configure do |config|
-#   config.integrate do |with|
-#     with.test_framework :rspec
-#     with.library :rails
-#   end
-# end
+Shoulda::Matchers.configure do |config|
+  config.integrate do |with|
+    with.test_framework :rspec
+    with.library :rails
+  end
+end
 
-# VCR.configure do |config|
-#   config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
-#   config.hook_into :webmock
-#   config.filter_sensitive_data('<app_key>') { ENV['app_key'] }
-#   config.allow_http_connections_when_no_cassette = true
-#   config.configure_rspec_metadata!
-# end
+VCR.configure do |config|
+  config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
+  config.hook_into :webmock
+  config.filter_sensitive_data('<app_id>') { ENV['app_id'] }
+  config.filter_sensitive_data('<app_key>') { ENV['app_key'] }
+  config.filter_sensitive_data('<appid>') { ENV['appid'] }
+  config.filter_sensitive_data('<key>') { ENV['key'] }
+  config.filter_sensitive_data('<client_id>') { ENV['client_id'] }
+  config.allow_http_connections_when_no_cassette = true
+  config.configure_rspec_metadata!
+end

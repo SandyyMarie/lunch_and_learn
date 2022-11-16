@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/search?channelId=UC4a-Gbdw7vOaccHmFo40b9g&key=<key>&maxResults=1&part=snippet&q=Canada
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Wed, 16 Nov 2022 11:56:52 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJraW5kIjogInlvdXR1YmUjc2VhcmNoTGlzdFJlc3BvbnNlIiwKICAiZXRhZyI6ICI5TlAxdFVxbmRVa0FXd2gzeHRPT2ZDT2xSX3ciLAogICJuZXh0UGFnZVRva2VuIjogIkNBRVFBQSIsCiAgInJlZ2lvbkNvZGUiOiAiVVMiLAogICJwYWdlSW5mbyI6IHsKICAgICJ0b3RhbFJlc3VsdHMiOiAxMjcsCiAgICAicmVzdWx0c1BlclBhZ2UiOiAxCiAgfSwKICAiaXRlbXMiOiBbCiAgICB7CiAgICAgICJraW5kIjogInlvdXR1YmUjc2VhcmNoUmVzdWx0IiwKICAgICAgImV0YWciOiAiY3NtLXctWVFuZG4xRENnTEpNdmZRTUwtNWRNIiwKICAgICAgImlkIjogewogICAgICAgICJraW5kIjogInlvdXR1YmUjdmlkZW8iLAogICAgICAgICJ2aWRlb0lkIjogIkh0MEZXN1J3Um1jIgogICAgICB9LAogICAgICAic25pcHBldCI6IHsKICAgICAgICAicHVibGlzaGVkQXQiOiAiMjAxNy0wOC0yMVQyMToyODo0NFoiLAogICAgICAgICJjaGFubmVsSWQiOiAiVUM0YS1HYmR3N3ZPYWNjSG1GbzQwYjlnIiwKICAgICAgICAidGl0bGUiOiAiTmF0aXZlIEFtZXJpY2FuIHNvY2lldGllcyBiZWZvcmUgY29udGFjdCB8IFBlcmlvZCAxOiAxNDkxLTE2MDcgfCBBUCBVUyBIaXN0b3J5IHwgS2hhbiBBY2FkZW15IiwKICAgICAgICAiZGVzY3JpcHRpb24iOiAiQ291cnNlcyBvbiBLaGFuIEFjYWRlbXkgYXJlIGFsd2F5cyAxMDAlIGZyZWUuIFN0YXJ0IHByYWN0aWNpbmfigJRhbmQgc2F2aW5nIHlvdXIgcHJvZ3Jlc3PigJRub3c6IC4uLiIsCiAgICAgICAgInRodW1ibmFpbHMiOiB7CiAgICAgICAgICAiZGVmYXVsdCI6IHsKICAgICAgICAgICAgInVybCI6ICJodHRwczovL2kueXRpbWcuY29tL3ZpL0h0MEZXN1J3Um1jL2RlZmF1bHQuanBnIiwKICAgICAgICAgICAgIndpZHRoIjogMTIwLAogICAgICAgICAgICAiaGVpZ2h0IjogOTAKICAgICAgICAgIH0sCiAgICAgICAgICAibWVkaXVtIjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvSHQwRlc3UndSbWMvbXFkZWZhdWx0LmpwZyIsCiAgICAgICAgICAgICJ3aWR0aCI6IDMyMCwKICAgICAgICAgICAgImhlaWdodCI6IDE4MAogICAgICAgICAgfSwKICAgICAgICAgICJoaWdoIjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvSHQwRlc3UndSbWMvaHFkZWZhdWx0LmpwZyIsCiAgICAgICAgICAgICJ3aWR0aCI6IDQ4MCwKICAgICAgICAgICAgImhlaWdodCI6IDM2MAogICAgICAgICAgfQogICAgICAgIH0sCiAgICAgICAgImNoYW5uZWxUaXRsZSI6ICJLaGFuIEFjYWRlbXkiLAogICAgICAgICJsaXZlQnJvYWRjYXN0Q29udGVudCI6ICJub25lIiwKICAgICAgICAicHVibGlzaFRpbWUiOiAiMjAxNy0wOC0yMVQyMToyODo0NFoiCiAgICAgIH0KICAgIH0KICBdCn0K
+  recorded_at: Wed, 16 Nov 2022 11:56:52 GMT
+recorded_with: VCR 6.1.0
